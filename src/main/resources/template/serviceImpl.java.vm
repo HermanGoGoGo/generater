@@ -1,0 +1,21 @@
+package ${package}.service.impl;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import ${package}.entity.${className};
+import ${package}.service.${className}Service;
+import com.isoftstone.ocp.common.core.AbstractService;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Service
+@Transactional
+public class ${className}ServiceImpl extends AbstractService<${className}> implements ${className}Service {
+
+}

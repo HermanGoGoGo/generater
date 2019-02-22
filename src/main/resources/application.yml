@@ -1,0 +1,26 @@
+# Tomcat
+server:
+    tomcat:
+        max-threads: 10
+        min-spare-threads: 10
+    port: 8888
+
+# mysql
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://112.74.53.101:3306/Ebookstore?characterEncoding=utf-8
+        username: Ebookstore
+        password: 123456
+#       password: ocpMaster
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    thymeleaf:
+        mode: LEGACYHTML5
+        cache: false
+
+# Mybatis配置
+mybatis:
+    mapperLocations: classpath:mapper/**/*.xml
+
